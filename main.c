@@ -6,9 +6,41 @@
 //              	M.Sc. candidate, Computational Science & Engineering           	//
 //              	Technische Universitat Munchen                                 	//
 //                                                                             		// 
-//  	Final update date: 21/07/2017                                              	//
+//  	Final update date: 05/03/2018                                              	//
 //                                                                             		//
 //////////////////////////////////////////////////////////////////////////////////////
+
+// Use CPP
+// Consider both full and sparse matrices
+// Pseudo architecture in mind:
+
+/*
+
+<helper.hpp>
+	
+	namespace dataStructure{
+
+		// Creates sparse matrix/vector
+		template <class T>
+		T class sparse{
+			private:
+				T **matrix;
+				T *vector;
+			public:
+				sparse() // create sparse matrix
+				sparse() // convert full matrix into sparse matrix
+				sparse() // create sparse vector
+				sparse() // convert full vector into sparse vector
+		}
+		// THERE SHOULD BE 2 CONSTRUCTORS FOR EACH MATRIX AND VECTOR (TOTAL OF 4 CONSTRUCTORS)
+		// ONE CONSTRUCTOR (EACH) FOR GENERATION OF SPARSE MATRIX/VECTOR
+		// ONE CONSTRUCTOR (EACH) FOR CONVERSION OF FULL MATRIX/VECTOR INTO SPARSE ONES
+
+		T class matrix
+	
+	}
+
+*/
 
 #include <stdio.h>
 #include <stdlib.h>

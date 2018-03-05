@@ -11,7 +11,7 @@ CFLAGS = -std=gnu99 -fstrict-overflow -Werror -Wshadow -Wstrict-overflow=4 -peda
 LDFLAGS= -lm
 
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=sim
+EXECUTABLE=sim.out
 
 all: $(EXECUTABLE)
 
